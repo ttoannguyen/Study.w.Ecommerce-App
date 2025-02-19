@@ -3,8 +3,10 @@ import Hero from "./Hero";
 import Title from "./Title.jsx";
 import { ShopContext } from "../context/ShopContext";
 import ProductItem from "./ProductItem.jsx";
+
 const LatestCollection = () => {
   const { products } = useContext(ShopContext);
+
   const [latestProducts, setLatestProducts] = useState([]);
 
   useEffect(() => {
